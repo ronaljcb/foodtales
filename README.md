@@ -4,6 +4,10 @@ Red social gastronómica que reúne restaurantes, platos, publicaciones y reseñ
 
 **Edición de portafolio de Ronal Condor · proyecto académico colaborativo.**
 
+**Mi participación:** desarrollo frontend con React y TypeScript, y contribuciones al backend Java/Spring Boot: entidades, autenticación, lógica de servicios y pruebas.
+
+[Código original del backend](https://github.com/CS2031-DBP/proyecto-backend-foodtales) · [Mis commits originales](https://github.com/CS2031-DBP/proyecto-backend-foodtales/commits/main/?author=ronaljcb) · [Mi participación y arquitectura](docs/CONTRIBUTIONS.md)
+
 [![Demo en Vercel](https://img.shields.io/badge/demo-Vercel-black?logo=vercel)](https://foodtales-hazel.vercel.app) ![Estado](https://img.shields.io/badge/estado-demo_interactiva-2d7c53)
 
 ![Vista de la aplicación](docs/screenshots/app.png)
