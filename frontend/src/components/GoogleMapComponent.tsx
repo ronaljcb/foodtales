@@ -1,0 +1,5 @@
+interface Props {latitude:number;longitude:number;onLocationSelect?:(lat:number,lng:number)=>void;onLocationChange?:(lat:number,lng:number)=>void;[key:string]:unknown}
+export default function GoogleMapComponent({latitude=-12.12,longitude=-77.03,onLocationSelect,onLocationChange}:Props){
+ const change=onLocationSelect||onLocationChange;
+ return <section className="space-y-3"><iframe title="Ubicación del restaurante" loading="lazy" className="w-full h-64 rounded-lg border" src={`https://www.openstreetmap.org/export/embed.html?bbox=${longitude-.01}%2C${latitude-.01}%2C${longitude+.01}%2C${latitude+.01}&layer=mapnik&marker=${latitude}%2C${longitude}`}/>{change?<div className="flex gap-2"><label>Latitud<input aria-label="Latitud" className="border rounded p-2 w-full" type="number" step="0.001" value={latitude} onChange={e=>change(Number(e.target.value),longitude)}/></label><label>Longitud<input aria-label="Longitud" className="border rounded p-2 w-full" type="number" step="0.001" value={longitude} onChange={e=>change(latitude,Number(e.target.value))}/></label></div>:null}</section>
+}

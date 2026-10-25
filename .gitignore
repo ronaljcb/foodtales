@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+venv/
+__pycache__/
+target/
+*.tsbuildinfo
